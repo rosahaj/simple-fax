@@ -1,0 +1,74 @@
+{
+  "elements": [
+    {
+      "type": "element",
+      "name": "soapenv:Envelope",
+      "attributes": {
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+        "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+        "xmlns:soapenv": "http://schemas.xmlsoap.org/soap/envelope/",
+        "xmlns:urn": "urn:soapservice"
+      },
+      "elements": [
+        { "type": "element", "name": "soapenv:Header" },
+        {
+          "type": "element",
+          "name": "soapenv:Body",
+          "elements": [
+            {
+              "type": "element",
+              "name": "urn:sendfax",
+              "attributes": {
+                "soapenv:encodingStyle": "http://schemas.xmlsoap.org/soap/encoding/"
+              },
+              "elements": [
+                {
+                  "type": "element",
+                  "name": "username",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                },
+                {
+                  "type": "element",
+                  "name": "password",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                },
+                {
+                  "type": "element",
+                  "name": "faxnumber",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                },
+                {
+                  "type": "element",
+                  "name": "data",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                },
+                {
+                  "type": "element",
+                  "name": "filetype",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                },
+                {
+                  "type": "element",
+                  "name": "identifier",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                },
+                {
+                  "type": "element",
+                  "name": "statusurl",
+                  "attributes": { "xsi:type": "xsd:string" },
+                  "elements": [{ "type": "text", "text": "" }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

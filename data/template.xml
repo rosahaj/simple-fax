@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:soapservice">
+   <soapenv:Header />
+   <soapenv:Body>
+      <urn:sendfax soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <username xsi:type="xsd:string"></username>
+         <password xsi:type="xsd:string"></password>
+         <faxnumber xsi:type="xsd:string"></faxnumber>
+         <data xsi:type="xsd:string"></data>
+         <filetype xsi:type="xsd:string"></filetype>
+         <identifier xsi:type="xsd:string"></identifier>
+         <statusurl xsi:type="xsd:string"></statusurl>
+      </urn:sendfax>
+   </soapenv:Body>
+</soapenv:Envelope>
