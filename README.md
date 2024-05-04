@@ -1,14 +1,14 @@
-# simple-fax
+# simple-fax-soap-client
 
 Unofficial client for the [simple-fax.de SOAP API](https://simple-fax.de/Downloads/SOAP-API-simplefax.pdf)
 
-> **Note:** The simple-fax.de SOAP API does not produce transmission reports and transmission do not appear in the "Versandbox" tab.
+> **Note:** The simple-fax.de SOAP API does not produce transmission reports and transmissions do not appear in the "Versandbox" tab.
 
 ## Usage
 
 ```ts
 import { readFileSync } from 'node:fs'
-import * as simpleFax from 'simple-fax'
+import * as simpleFax from 'simple-fax-soap-client'
 
 const base64EncodedPDF = fs.ReadFileSync('./document.pdf').toString('base64')
 
