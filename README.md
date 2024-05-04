@@ -8,6 +8,8 @@
 
 Unofficial client for the [simple-fax.de SOAP API](https://simple-fax.de/Downloads/SOAP-API-simplefax.pdf)
 
+> **Note:** The simple-fax.de SOAP API does not produce transmission reports and transmission do not appear in the "Versandbox" tab.
+
 ## Usage
 
 ```ts
