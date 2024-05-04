@@ -12,7 +12,7 @@ Unofficial client for the [simple-fax.de SOAP API](https://simple-fax.de/Downloa
 
 ```ts
 import { readFileSync } from 'node:fs'
-import simpleFax, { SimpleFaxError } from 'simple-fax'
+import simpleFax from 'simple-fax'
 
 const base64EncodedPDF = fs.ReadFileSync('./document.pdf').toString('base64')
 
