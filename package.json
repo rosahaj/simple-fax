@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "ky": "^1.2.4",
+    "undici": "^6.15.0",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {

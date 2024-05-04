@@ -11,6 +11,9 @@ importers:
       ky:
         specifier: ^1.2.4
         version: 1.2.4
+      undici:
+        specifier: ^6.15.0
+        version: 6.15.0
       xml-js:
         specifier: ^1.6.11
         version: 1.6.11
@@ -2619,6 +2622,10 @@ packages:
 
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
+  undici@6.15.0:
+    resolution: {integrity: sha512-VviMt2tlMg1BvQ0FKXxrz1eJuyrcISrL2sPfBf7ZskX/FCEc/7LeThQaoygsMJpNqrATWQIsRVx+1Dpe4jaYuQ==}
+    engines: {node: '>=18.17'}
 
   unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
@@ -5369,6 +5376,8 @@ snapshots:
       - supports-color
 
   undici-types@5.26.5: {}
+
+  undici@6.15.0: {}
 
   unicorn-magic@0.1.0: {}
 
