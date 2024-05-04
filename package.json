@@ -13,7 +13,9 @@
   },
   "bugs": "https://github.com/rosahaj/simple-fax/issues",
   "keywords": [
-    "fax"
+    "simple-fax",
+    "fax",
+    "soap"
   ],
   "sideEffects": false,
   "exports": {

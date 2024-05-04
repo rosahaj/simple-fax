@@ -36,13 +36,13 @@ console.log(`Fax ID: ${faxId}`)
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/pkg-placeholder
+[npm-version-src]: https://img.shields.io/npm/v/simple-fax?style=flat&colorA=080f12&colorB=1fa669
+[npm-version-href]: https://npmjs.com/package/simple-fax
 [npm-downloads-src]: https://img.shields.io/npm/dm/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/pkg-placeholder
+[npm-downloads-href]: https://npmjs.com/package/simple-fax
 [bundle-src]: https://img.shields.io/bundlephobia/minzip/pkg-placeholder?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=pkg-placeholder
+[bundle-href]: https://bundlephobia.com/result?p=simple-fax
 [license-src]: https://img.shields.io/github/license/antfu/pkg-placeholder.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/pkg-placeholder/blob/main/LICENSE
+[license-href]: https://github.com/rosahaj/simple-fax/blob/main/LICENSE
 [jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/pkg-placeholder
+[jsdocs-href]: https://www.jsdocs.io/package/simple-fax
