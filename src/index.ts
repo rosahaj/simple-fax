@@ -1,7 +1,6 @@
 import { js2xml } from 'xml-js'
-import type { Options } from 'ky'
-import ky from 'ky'
 import { request } from 'undici'
+import * as cheerio from 'cheerio'
 import { SimpleFaxError } from './errors.js'
 import type { EnvelopeOptions } from './types.js'
 import template from './template.json'
@@ -38,7 +37,8 @@ export async function sendFax(
 ): Promise<string> {
   const envelope = createEnvelope(options)
 
-  const response = await request('http://longisland.simple-fax.de/soap/index.php', {
+  const xml = await request('https://longisland.simple-fax.de/soap/index.php', {
+    method: 'POST',
     body: envelope,
     headers: {
       'Content-Type': 'text/xml;charset=UTF-8',
@@ -46,8 +46,11 @@ export async function sendFax(
     },
   }).then(({ body }) => body.text())
 
+  const $ = cheerio.load(xml)
+  const response = $('ns4\\:sendfaxResponse').text()
+
   // Response format: "status;message."
-  const [status, message] = response.trim().replace(/\.$/, '').split(';')
+  const [status, message] = response.trim().replace(/\..*$/, '').split(';')
 
   if (status === 'success')
     return message

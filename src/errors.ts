@@ -3,7 +3,7 @@ export enum ErrorCode {
   InvalidCredentials = 'INVALID_CREDENTIALS',
   InvalidFaxNumber = 'INVALID_FAX_NUMBER',
   InsufficientBalance = 'INSUFFICIENT_BALANCE',
-  InvalidDocument = 'INVALID_DOCUMENT',
+  FaultyDocument = 'FAULTY_DOCUMENT',
   InternalError = 'INTERNAL_ERROR',
   Other = 'OTHER',
 }
@@ -28,7 +28,7 @@ export class SimpleFaxError extends Error {
         break
 
       case 'Dokument fehlerhaft':
-        this.code = ErrorCode.InsufficientBalance
+        this.code = ErrorCode.FaultyDocument
         break
 
       default:

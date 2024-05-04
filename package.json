@@ -51,6 +51,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "cheerio": "1.0.0-rc.12",
     "ky": "^1.2.4",
     "undici": "^6.15.0",
     "xml-js": "^1.6.11"
